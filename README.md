@@ -93,6 +93,25 @@ If you want to run only one episode, run the command:
 ./waf --run scratch/NS3_Env_large.cc
 ```
 
+To run randomized large scale scenario, open the terminal and run the command:
+
+```shell
+chmod +x ./CADC_randlarge.sh
+./bash CADC_randlarge.sh
+```
+
+Note that, you don't have to repeat the following command after your first running.
+
+```shell
+chmod +x ./CADC_randlarge.sh
+```
+
+If you want to run only one episode, run the command:
+
+```shell
+./waf --run scratch/NS3_Env_randlarge.cc
+```
+
 ## Running agent
 
 In the directory scratch, there are CADC agent files for small and large scale scenarios.
@@ -109,6 +128,13 @@ For large scale scenario, open a new terminal and run the command:
 ```shell
 cd ./scratch
 python3 CADC_Large.py
+```
+
+For randomized large scale scenario, open a new terminal and run the command:
+
+```shell
+cd ./scratch
+python3 CADC_RandLarge.py
 ```
 
 Contact
